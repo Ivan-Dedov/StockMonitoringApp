@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="country_field_name">country</string>
+    <string name="currency_field_name">currency</string>
+    <string name="industry_field_name">finnhubIndustry</string>
+    <string name="company_logo_field_name">logo</string>
+    <string name="company_description_field_name">name</string>
+    <string name="open_price_field_name">o</string>
+    <string name="current_price_field_name">c</string>
+    <string name="previous_price_field_name">pc</string>
+    <string name="high_price_field_name">h</string>
+    <string name="low_price_field_name">l</string>
+    <string name="market_capitalization_field_name">marketCapitalization</string>
+</resources>

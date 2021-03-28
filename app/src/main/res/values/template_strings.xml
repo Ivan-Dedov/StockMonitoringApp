@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ticker_template_text">XXXX</string>
+
+    <string name="company_description_template_text">Company LLC</string>
+    <string name="industry_template_text">Some industry</string>
+    <string name="country_template_text">US</string>
+
+    <string name="price_template_text">$0.00</string>
+    <string name="percentage_template_text">+$0.00 (+0.00%)</string>
+    <string name="market_capitalization_template_text">$0</string>
+
+    <string name="date_template_text">01 Jan 1970</string>
+
+    <string name="date_template">dd MMMM yyyy</string>
+</resources>

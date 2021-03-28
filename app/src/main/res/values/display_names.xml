@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Stocks Monitor</string>
+
+    <string name="all_stocks_button_text">Stocks</string>
+    <string name="favorite_stocks_button_text">Favourites</string>
+
+    <string name="high_price_text">High price:</string>
+    <string name="low_price_text">Low price:</string>
+    <string name="open_price_text">Open price:</string>
+
+    <string name="market_capitalization_text">Market capitalization:</string>
+
+    <string name="industry_and_country_separator">,</string>
+    <string name="millions_unit">M</string>
+
+    <string name="ticker_search_hint">Search companies</string>
+    <string name="no_wifi_message_text">Please connect to the Internet and relog</string>
+</resources>

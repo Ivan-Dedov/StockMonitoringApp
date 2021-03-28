@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="baseUrl">https://finnhub.io/api/v1/</string>
+    <string name="apiToken">&amp;token=c14dpif48v6t40fvdlr0"</string>
+    <string name="snp500Url">https://www.slickcharts.com/sp500</string>
+</resources>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginBottom="7.5dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="15dp"
+    app:cardElevation="0dp"
+    app:cardMaxElevation="0dp"
+    app:cardUseCompatPadding="true"
+    app:cardPreventCornerOverlap="false"
+    app:cardBackgroundColor="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/companyTicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="15dp"
+            android:layout_toEndOf="@+id/companyLogo"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="@string/ticker_template_text"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/companyDescription"
+            android:layout_width="200sp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/companyTicker"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="77dp"
+            android:layout_toStartOf="@+id/percentageChange"
+            android:layout_toEndOf="@+id/companyLogo"
+            android:fontFamily="@font/montserrat_light"
+            android:text="@string/company_description_template_text"
+            android:textColor="@color/pure_black"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/currentPrice"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:textAlignment="textEnd"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="@string/price_template_text"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/percentageChange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/currentPrice"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="@string/percentage_template_text"
+            android:textSize="12sp" />
+
+        <ImageButton
+            android:id="@+id/addToFavoritesButton"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_alignTop="@+id/companyTicker"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@+id/companyTicker"
+            android:background="@android:color/transparent"
+            app:srcCompat="@drawable/ic_stock_not_favorite"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/companyLogo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            tools:ignore="ContentDescription" />
+
+    </RelativeLayout>
+    
+</androidx.cardview.widget.CardView>

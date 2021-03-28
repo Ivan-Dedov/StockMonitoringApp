@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+
+    <TextView
+        android:id="@+id/tickerLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25sp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="@string/ticker_template_text"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/favoriteButton"
+        android:layout_width="28sp"
+        android:layout_height="28sp"
+        android:layout_marginStart="5sp"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="@+id/tickerLabel"
+        app:layout_constraintStart_toEndOf="@+id/tickerLabel"
+        app:layout_constraintTop_toTopOf="@+id/tickerLabel"
+        app:srcCompat="@drawable/ic_stock_not_favorite"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/descriptionLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5sp"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="@string/company_description_template_text"
+        android:textAlignment="center"
+        android:textColor="@color/pure_black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tickerLabel" />
+
+    <TextView
+        android:id="@+id/industryAndCountryLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5sp"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="@string/industry_template_text"
+        android:textColor="@color/dark_dark_gray"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/descriptionLabel" />
+
+    <ImageView
+        android:id="@+id/companyLogoImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10sp"
+        android:maxWidth="100sp"
+        android:maxHeight="100sp"
+        android:minWidth="100sp"
+        android:minHeight="100sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/industryAndCountryLabel"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/currentPriceValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10sp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="@string/price_template_text"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/companyLogoImageView" />
+
+    <TextView
+        android:id="@+id/priceChangeValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5sp"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="@string/percentage_template_text"
+        android:textAlignment="center"
+        android:textColor="@color/dark_gray"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/currentPriceValue" />
+
+    <TextView
+        android:id="@+id/dateLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10sp"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="@string/date_template_text"
+        android:textAlignment="center"
+        android:textColor="@color/dark_dark_gray"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/priceChangeValue" />
+
+    <View
+        android:id="@+id/separatorRectangle"
+        android:layout_width="fill_parent"
+        android:layout_height="15sp"
+        android:layout_marginTop="15sp"
+        android:background="@drawable/rectangle_separator"
+        android:rotation="180"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dateLabel" />
+
+    <TextView
+        android:id="@+id/marketCapitalizationLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15sp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="@string/market_capitalization_text"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/separatorRectangle" />
+
+    <TextView
+        android:id="@+id/marketCapitalizationValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="@string/market_capitalization_template_text"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/marketCapitalizationLabel" />
+
+    <TextView
+        android:id="@+id/openPriceLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15sp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="@string/price_template_text"
+        android:textAlignment="textStart"
+        android:textColor="@color/almost_black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/openPriceValue"
+        app:layout_constraintStart_toEndOf="@+id/openPriceValue"
+        app:layout_constraintTop_toTopOf="@+id/openPriceValue" />
+
+    <TextView
+        android:id="@+id/openPriceValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30sp"
+        android:layout_marginTop="15sp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="@string/open_price_text"
+        android:textAlignment="textStart"
+        android:textColor="@color/dark_dark_gray"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/marketCapitalizationValue" />
+
+    <TextView
+        android:id="@+id/highPriceLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30sp"
+        android:layout_marginTop="20sp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="@string/high_price_text"
+        android:textAlignment="textStart"
+        android:textColor="@color/green"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/openPriceValue" />
+
+    <TextView
+        android:id="@+id/highPriceValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="@string/price_template_text"
+        android:textAlignment="textStart"
+        android:textColor="@color/almost_black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/highPriceLabel"
+        app:layout_constraintStart_toStartOf="@+id/openPriceLabel"
+        app:layout_constraintTop_toTopOf="@+id/highPriceLabel" />
+
+    <TextView
+        android:id="@+id/lowPriceLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30sp"
+        android:layout_marginTop="20sp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="@string/low_price_text"
+        android:textAlignment="textStart"
+        android:textColor="@color/red"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/highPriceLabel" />
+
+    <TextView
+        android:id="@+id/lowPriceValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="@string/price_template_text"
+        android:textAlignment="textStart"
+        android:textColor="@color/almost_black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/lowPriceLabel"
+        app:layout_constraintStart_toStartOf="@+id/highPriceValue"
+        app:layout_constraintTop_toTopOf="@+id/lowPriceLabel" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

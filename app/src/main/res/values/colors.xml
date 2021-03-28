@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#FFFFFFFF</color>
+    <color name="light_gray">#FFF0F4F7</color>
+    <color name="pure_black">#FF000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="yellow">#FFFFCA1C</color>
+    <color name="green">#FF24B25D</color>
+    <color name="red">#FFB22424</color>
+
+    <color name="black">#FF1A1A1A</color>
+    <string name="black">#FF1A1A1A</string>
+
+    <color name="dark_gray">#FFBABABA</color>
+    <string name="dark_gray">#FFBABABA</string>
+
+    <color name="dark_dark_gray">#FF999999</color>
+    <color name="almost_black">#FF666666</color>
+</resources>
